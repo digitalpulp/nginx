@@ -5,7 +5,5 @@ NGINX
 
 | Version | Tags | Dockerfile |
 | --- | --- | --- |
-| 1.11 | `latest`, `1` | [Dockerfile](https://github.com/digitalpulp/nginx/blob/master/mainline/Dockerfile-mainline) |
-|  | `latest-alpine` | [Dockerfile](https://github.com/digitalpulp/nginx/blob/master/mainline/Dockerfile-mainline-alpine) |
-| 1.10 | `stable` | [Dockerfile](https://github.com/digitalpulp/nginx/blob/master/stable/Dockerfile-stable) |
-|  | `stable-alpine` | [Dockerfile](https://github.com/digitalpulp/nginx/blob/master/stable/Dockerfile-stable-alpine) |
+| - | `stable` | [Dockerfile](https://github.com/digitalpulp/nginx/blob/master/stable/Dockerfile-stable) |
+|1.0.0| `stable-alpine--v1.0.0` | [Dockerfile](https://github.com/digitalpulp/nginx/blob/master/stable/Dockerfile-stable-alpine) |
