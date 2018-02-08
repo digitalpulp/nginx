@@ -2,8 +2,7 @@ FROM nginx:stable-alpine
 
 MAINTAINER digitalpulp
 
-WORKDIR /var/www/html
-VOLUME /var/www/html
+WORKDIR /var/www
 
 # Ensure www-data user exists.
 RUN addgroup -g 82 -S www-data \
