@@ -6,7 +6,9 @@ WORKDIR /var/www
 
 # Ensure www-data user exists.
 RUN addgroup -g 82 -S www-data \
-  && adduser -u 82 -D -S -G www-data www-data
+  && adduser -u 82 -D -S -G www-data www-data \
+  && apk add --no-cache openssl
+
 
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY magento.conf /etc/nginx/conf.d/default.conf
