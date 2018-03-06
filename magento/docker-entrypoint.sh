@@ -9,7 +9,7 @@ echo "Configured docroot to ${DOCROOT}."
 sed -i 's/%SERVER_NAME%/'"${SERVER_NAME}"'/' /etc/nginx/conf.d/*.conf
 echo "Configured server name to ${SERVER_NAME}."
 
-if [ -n ${VIRTUAL_HOST} -a -d /etc/nginx/certs ]; then
+if [ -n ${VIRTUAL_HOST} -a -d /etc/nginx/certs -a ! -r "/etc/nginx/certs/${VIRTUAL_HOST}.crt" ]; then
     # Generate a cert for local use.
     openssl genrsa -out /etc/nginx/certs/${VIRTUAL_HOST}.key 2048
     openssl req -new -key /etc/nginx/certs/${VIRTUAL_HOST}.key -out /etc/nginx/certs/${VIRTUAL_HOST}.csr -subj "/C=US/ST=New York/L=New York/O=Digital Pulp/OU=Engineering/CN=${VIRTUAL_HOST}"
