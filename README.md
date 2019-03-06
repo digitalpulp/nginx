@@ -6,4 +6,4 @@ NGINX
 | Version | Tags | Dockerfile |
 | --- | --- | --- |
 | - | `stable` | [Dockerfile](https://github.com/digitalpulp/nginx/blob/master/stable/Dockerfile-stable) |
-|1.0.1| `stable-alpine--v1.0.1` | [Dockerfile](https://github.com/digitalpulp/nginx/blob/master/stable/Dockerfile-stable-alpine) |
+|1.0.2| `stable-alpine--v1.0.2` | [Dockerfile](https://github.com/digitalpulp/nginx/blob/master/stable/Dockerfile-stable-alpine) |
